@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+.project_1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(170deg,rgba(0, 247, 255, 0.795),rgb(16, 114, 160),rgb(0, 4, 255));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body{
+    width: 380px;
+    height: 640px;
+}
+.body .screen{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 25%;
+    text-align: right;
+    border: 2px solid black;
+}
+.screen ul{
+    padding: 1rem .5rem 0rem 0;
+    font-size: 3rem;
+}
+.screen{
+    width: 100%;
+    height: 80px;
+    font-size: 3rem;
+    text-align: right;
+}
+.screen input:hover{
+    outline: none;
+}
+.screen input:focus{
+    outline: none;
+}
+.screen_top{
+    width: auto;
+    height: 40%;
+    font-size: 2.3rem;
+    padding-top: .7rem;
+    color: rgb(104, 104, 104);
+}
+.screen_below{
+    width: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: .9;
+}
+.keypads{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    padding: .1rem;
+}
+.keypads button{
+    width: 80px;
+    height: 75px;
+    margin: .33rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+.keypads button:hover{
+    transition: all .1s ease-in-out;
+    background: transparent;
+    color: white;
+    border: 5px solid #fff;
+}
+.keypads button:focus{
+    outline: none;
+    --webkit-outline: none;
+}
+
+@media only screen and (max-width: 380px){
+    .body{
+        width: 310px;
+    }
+    .keypads{
+        padding: 0rem;
+    }
+    .keypads button{
+        width: 70px;
+        height: 65px;
+        margin: .15rem;
+        border-radius: 10px;
+        font-size: 2rem;
+        border: none;
+    }
+}
